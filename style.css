@@ -1,0 +1,309 @@
+* {
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #b7c4b9;
+}
+
+header {
+    padding: 50px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+h1 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.new-task-form {
+    display: flex;
+}
+
+.new-task-input,
+.start-date,
+.new-task-submit, 
+.remove {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.input-fields{
+    flex-direction: column;
+    display: flex;
+}
+
+.new-task-input {
+    flex: 1 1 0;    
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.start-date {
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 0;
+}
+
+.new-task-input::-webkit-input-placeholder {
+    font-size: 20px;
+}
+
+.new-task-submit {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #000000;
+    color: #f5f5f5;
+    border-radius: 25px;
+    margin-top: 15px;
+    width: 140px;
+    padding: 0;
+}
+
+.new-task-submit:active {
+    opacity: 0.7;
+}
+
+.new-task-submit:active {
+    opacity: 0.5;
+}
+
+main {
+    padding: 0px 50px 0px 50px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px
+}
+
+.task-element {
+    margin: 25px 0px 0px 0px;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.input-text {
+    flex: 1 1 0%;
+    padding: 0;
+    font-size: 20px;
+    overflow: auto;
+}
+
+.remove {
+    padding: 0;
+}
+
+.remove:hover {
+    opacity: 0.7;
+    -webkit-text-fill-color:#ff0000;
+}
+
+.remove:active {
+    opacity: 0.5;
+    -webkit-text-fill-color:#ff0000;
+}
+
+.text-decoration {
+    text-decoration: line-through;
+}
+
+.remove,
+.press-date,
+.checked {
+    font-size: 19px;
+} 
+
+@media screen and (max-width: 991px) {
+    header {
+        max-width: 800px;
+        padding: 45px;
+    }
+
+    main {
+        max-width: 800px;
+        padding: 0 45px 0 45px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .new-task-input,
+    .content {
+        padding: 18px;
+    }
+
+    .new-task-submit,
+    .remove,
+    .checked,
+    .press-date {
+        font-size: 17px;
+    }
+
+    .input-text {
+        font-size: 18px;
+    }
+
+
+
+    @media screen and (max-width: 768px) {
+        header {
+            max-width: 650px;
+            padding: 40px;
+        }
+
+        main {
+            max-width: 650px;
+            padding: 0 40px 0 40px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 19px;
+        }
+
+        .new-task-submit,
+        .new-task-input,
+        .new-task-input::-webkit-input-placeholder,
+        .input-text {
+            font-size: 16px;
+        }
+
+        .checked,
+        .remove,
+        .press-date {
+            font-size: 16px;
+        }
+
+        .start-date,
+        .new-task-submit {
+            width: 18vw;
+        }
+
+        .press-date {
+            width: 20vw;
+        }
+
+        @media screen and (max-width: 624px) {
+            header {
+                max-width: 600px;
+            }
+
+            main {
+                max-width: 600px;
+            }
+            .press-date {
+                width: 22vw;
+            }
+
+            @media screen and (max-width: 575px) {
+                header {
+                    max-width: 550px;
+                    padding: 35px;
+                }
+
+                main {
+                    max-width: 550px;
+                    padding: 0 35px 0 35px;
+                }
+
+                h1 {
+                    font-size: 22px;
+                }
+
+                h2 {
+                    font-size: 15px;
+                }
+
+                .new-task-submit,
+                .remove,
+                .checked,
+                .press-date {
+                    font-size: 15px;
+                }
+
+                .new-task-input {
+                    margin-right: 15px;
+                }
+
+                .press-date {
+                    width: 25vw;
+                }
+
+                @media screen and (max-width: 450px) {
+
+                    header {
+                        padding: 30px;
+                    }
+
+                    main {
+                        padding: 0 30px 0 30px;
+                    }
+
+                    .new-task-input,
+                    .new-task-input::-webkit-input-placeholder,
+                    .input-text {
+                        font-size: 14px;
+                    }
+
+                    .press-date,
+                    .checked,
+                    .remove {
+                        font-size: 14px;
+                    }
+
+                    @media screen and (max-width: 420px) {
+                        .new-task-input {
+                            padding: 16px;
+                        }
+
+                        .main-header {
+                            padding: 25px;
+                        }
+
+                        .content {
+                            padding: 16px;
+                        }
+
+                        main {
+                            padding: 0 25px 0 25px;
+                        }
+
+                        .press-date,
+                        .checked,
+                        .remove {
+                        font-size: 12px;
+                        }
+
+                        .new-task-submit {
+                            font-size: 12px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
